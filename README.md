@@ -1,4 +1,4 @@
-<img width="693" alt="스크린샷 2021-07-30 오전 12 14 54" src="https://user-images.githubusercontent.com/76778082/127518354-df47e485-544d-4266-ac53-244a14202369.png">
+
 <img width="1278" alt="스크린샷 2021-07-29 오전 1 16 26" src="https://user-images.githubusercontent.com/76778082/127359862-fdb8a136-f695-44ba-a5b9-c6a52d72ace7.png">
 <img width="1278" alt="스크린샷 2021-07-29 오전 1 16 38" src="https://user-images.githubusercontent.com/76778082/127359872-189e667e-1942-43ec-b924-72c639dfeb09.png">
 # Solar-energy-prediction
@@ -43,5 +43,6 @@ to predict solar energy
 이미지 관련 AI 도 재밌지만 시계열 데이터의 예측도 상당히 재미있는 분야중 하나인것같다. 지식도늘고 적용할수있는 모델이 늘었다.
 
 다음에 시간나면 다른분야도 도전해볼 예정
+<img width="693" alt="스크린샷 2021-07-30 오전 12 14 54" src="https://user-images.githubusercontent.com/76778082/127518509-aaefcffc-b62e-4d3e-92a6-a1b53a0c10be.png">
 
 
