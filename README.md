@@ -15,7 +15,7 @@ to predict solar energy
 
 1. 시간의 간격이 일치하지않아 1시간별로 맞추는 작업을 진행하였고 duplicates 함수를 통해 마지막의 값을 남겨놓았다(마지막에 예측한값이 가장 정확하니까)
 2. 결측치의 개수를 파악한다음 불연속으로 존재한다면 평균 or 다른 weather 이나 forecast 파일에서 알아내기 or bfill ffill 을 통해 채워주는 식으로 진행하였다
-3. 시간의 연속적인 값을 표현하기위해 주기가 24인 sin,cos함수와  , 월을 표현하기위해 주기가 12인 sin,cos 을 도입하였다 ( 학부과정떄 배운 미분방저정식의 푸리에급수에서 아이디어를받음)
+3. 시간의 연속적인 값을 표현하기위해 주기가 24인 sin,cos함수와  , 월을 표현하기위해 주기가 12인 sin,cos을 linear combination 하여도입하였다 ( 학부과정떄 배운 미분방저정식의 푸리에급수에서 아이디어를받음)
 4. 모델링은 fbprophet,Neural prophet,xgboost,catboost 를 통해 제일 잘 예측하는 값을 찾아보았다.
 5. Neural prophet은 예측력이 상당히 떨어져서 적용할수없었다.catboost 또한 xgboost 만큼의 성능을내지못함 (알아보니 classification 에 최적화되어있음,나중에 분류문제에 써야겠다)
 6. xgboost,catboost 의 regressor 로 사용하였다.간단하게설명하자면 based on decision tree 로 regression 을 진행한다.
