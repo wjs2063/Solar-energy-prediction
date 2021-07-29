@@ -13,14 +13,14 @@ to predict solar energy
 
 ### use_data 파일은 원본 weather1의 파일을 local 환경에서 이미 전처리 하였다
 
-1.시간의 간격이 일치하지않아 1시간별로 맞추는 작업을 진행하였고 duplicates 함수를 통해 마지막의 값을 남겨놓았다(마지막에 예측한값이 가장 정확하니까)
-2.결측치의 개수를 파악한다음 불연속으로 존재한다면 평균 or 다른 weather 이나 forecast 파일에서 알아내기 or bfill ffill 을 통해 채워주는 식으로 진행하였다
-3.시간의 연속적인 값을 표현하기위해 주기가 24인 sin,cos함수와  , 월을 표현하기위해 주기가 12인 sin,cos 을 도입하였다 ( 학부과정떄 배운 미분방저정식의 푸리에급수에서 아이디어를받음)
-4.모델링은 fbprophet,Neural prophet,xgboost,catboost 를 통해 제일 잘 예측하는 값을 찾아보았다.
-5.Neural prophet은 예측력이 상당히 떨어져서 적용할수없었다.catboost 또한 xgboost 만큼의 성능을내지못함 (알아보니 classification 에 최적화되어있음,나중에 분류문제에 써야겠다)
-6.xgboost,catboost 의 regressor 로 사용하였다.간단하게설명하자면 based on decision tree 로 regression 을 진행한다.
-7.hyperparameter 가 상당히많아 전체 파라미터를 수정하려면 grid search 로 수시간이 걸려서 중요하다고 생각되는 test_size,depth,min_tree,gamma,est 를 grid search 로 진행하였다.
-8.hyper parameter tuning 전과 후는 rmse 58-> 50, SMAPE -> 6.1->5.4 로 상당한 성능 향상이있었다.
+1. 시간의 간격이 일치하지않아 1시간별로 맞추는 작업을 진행하였고 duplicates 함수를 통해 마지막의 값을 남겨놓았다(마지막에 예측한값이 가장 정확하니까)
+2. 결측치의 개수를 파악한다음 불연속으로 존재한다면 평균 or 다른 weather 이나 forecast 파일에서 알아내기 or bfill ffill 을 통해 채워주는 식으로 진행하였다
+3. 시간의 연속적인 값을 표현하기위해 주기가 24인 sin,cos함수와  , 월을 표현하기위해 주기가 12인 sin,cos 을 도입하였다 ( 학부과정떄 배운 미분방저정식의 푸리에급수에서 아이디어를받음)
+4. 모델링은 fbprophet,Neural prophet,xgboost,catboost 를 통해 제일 잘 예측하는 값을 찾아보았다.
+5. Neural prophet은 예측력이 상당히 떨어져서 적용할수없었다.catboost 또한 xgboost 만큼의 성능을내지못함 (알아보니 classification 에 최적화되어있음,나중에 분류문제에 써야겠다)
+6. xgboost,catboost 의 regressor 로 사용하였다.간단하게설명하자면 based on decision tree 로 regression 을 진행한다.
+7. hyperparameter 가 상당히많아 전체 파라미터를 수정하려면 grid search 로 수시간이 걸려서 중요하다고 생각되는 test_size,depth,min_tree,gamma,est 를 grid search 로 진행하였다.
+8. hyper parameter tuning 전과 후는 rmse 58-> 50, SMAPE -> 6.1->5.4 로 상당한 성능 향상이있었다.
 
 한계점: 시계열관련해서 지식이없다보니 물어볼 사람도없었고, 혼자 방대한 양의 전처리 + 데이터판단 (통계관련지식과 검색을 통해 빠르게 수집)+ 모델선정과 모델 적용을위한 시간 + 오류수정 
 이 네가지가 한꺼번에 겹쳐서 해결하는데 시간이 많이 소요되었다. 
