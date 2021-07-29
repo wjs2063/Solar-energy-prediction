@@ -21,6 +21,7 @@ to predict solar energy
 6. xgboost,catboost 의 regressor 로 사용하였다.간단하게설명하자면 based on decision tree 로 regression 을 진행한다.
 7. hyperparameter 가 상당히많아 전체 파라미터를 수정하려면 grid search 로 수시간이 걸려서 중요하다고 생각되는 test_size,depth,min_tree,gamma,est 를 grid search 로 진행하였다.
 8. hyper parameter tuning 전과 후는 rmse 58-> 50, SMAPE -> 6.1->5.4 로 상당한 성능 향상이있었다.
+9. 내장함수가 아닌 custom loss function 으로 과소추정하는 것을 방지하였다 
 
 한계점: 시계열관련해서 지식이없다보니 물어볼 사람도없었고, 혼자 방대한 양의 전처리 + 데이터판단 (통계관련지식과 검색을 통해 빠르게 수집)+ 모델선정과 모델 적용을위한 시간 + 오류수정 
 이 네가지가 한꺼번에 겹쳐서 해결하는데 시간이 많이 소요되었다. 
@@ -29,6 +30,8 @@ to predict solar energy
 ## 느낀점:
 
 시계열관련 대회를 두번째 도전하는것(첫번쨰는 데이콘 인공지능 비트트레이더)  이였지만 5일동안 밤샘해가며 얻은것이 상당히 많았다.
+
+처음부터 끝까지 온전히 다 내가 해낸것이여서 의미가 큰것같다.
 
 학부연구생 Superresolution 업무도 하면서 바쁘긴했지만 목표하나를 잡고나니까 미친듯이 집중하였고 여러정보들을 취합해서 빠르게 판단하는 능력도 향상이된것같다.
 
