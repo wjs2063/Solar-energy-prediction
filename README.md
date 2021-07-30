@@ -1,6 +1,9 @@
 
-<img width="400" alt="스크린샷 2021-07-29 오전 1 16 26" src="https://user-images.githubusercontent.com/76778082/127359862-fdb8a136-f695-44ba-a5b9-c6a52d72ace7.png">
-<img width="400" alt="스크린샷 2021-07-29 오전 1 16 38" src="https://user-images.githubusercontent.com/76778082/127359872-189e667e-1942-43ec-b924-72c639dfeb09.png">
+
+
+
+
+
 # Solar-energy-prediction
 to predict solar energy
 
@@ -11,6 +14,15 @@ to predict solar energy
 ### 입찰방식: 전날 10시 이전에 예측한값, 전날 10~17시 사이에 예측한 값으로 다음날 태양발전량과 비교후 (실제발전량-예측발전량)/발전용량 의 평균으로 예측오차를 산정한다.
 
 ### 수행기간 : 2021-07-20~2021-07-30
+
+
+
+먼저 데이터 전처리는 local 환경에서 진행하였다.
+require.txt 에 local 환경에설치된 library 버젼이 기록되어있으므로 참고하면된다. 
+
+
+
+
 
 ### use_data 파일은 원본 weather1의 파일을 local 환경에서 이미 전처리 하였다.
 
@@ -48,6 +60,7 @@ to predict solar energy
  다음에 시간나면 다른분야도 도전해볼 예정
 
 
-<img width="693" alt="스크린샷 2021-07-30 오전 12 14 54" src="https://user-images.githubusercontent.com/76778082/127518509-aaefcffc-b62e-4d3e-92a6-a1b53a0c10be.png">
+<img width="400" alt="스크린샷 2021-07-30 오전 12 14 54" src="https://user-images.githubusercontent.com/76778082/127518509-aaefcffc-b62e-4d3e-92a6-a1b53a0c10be.png">
 
-
+<img width="400" alt="스크린샷 2021-07-29 오전 1 16 26" src="https://user-images.githubusercontent.com/76778082/127359862-fdb8a136-f695-44ba-a5b9-c6a52d72ace7.png">
+<img width="400" alt="스크린샷 2021-07-29 오전 1 16 38" src="https://user-images.githubusercontent.com/76778082/127359872-189e667e-1942-43ec-b924-72c639dfeb09.png">
