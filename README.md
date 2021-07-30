@@ -23,8 +23,13 @@ to predict solar energy
 
 require.txt 에 local 환경에설치된 library 버젼이 기록되어있으므로 참고하면된다.
 
+
+
+### Data processing and Modeling
+
 처리방식은 weather1의 pressure 에 5가지 null 값이 들어가있어서 다른예보의 값으로 대체해주었고 
 중복된 값은 duplicates 함수를 통해 마지막것만 남기고 삭제해주었다(이유는 제일 최근에 예측한값이 가장정확할것이기때문)
+
 
 1. 시간의 간격이 일치하지않아 1시간별로 맞추는 작업을 진행하였고 duplicates 함수를 통해 마지막의 값을 남겨놓았다(마지막에 예측한값이 가장 정확하니까)
 2. 결측치의 개수를 파악한다음 불연속으로 존재한다면 평균 or 다른 weather 이나 forecast 파일에서 알아내기 or bfill ffill 을 통해 채워주는 식으로 진행하였다
@@ -38,7 +43,7 @@ require.txt 에 local 환경에설치된 library 버젼이 기록되어있으므
 
 
 
- ## 총평가: 
+ ### 총평가: 
  비록 현재 7.28일 누적평균오차 3.15% 으로 나름 괜찮게 예측을 한것같지만 순위안에 들지못지못하여 안타깝다.
 
  다음에 시간나면 다른분야도 도전해볼 예정
