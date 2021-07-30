@@ -1,6 +1,6 @@
 
-<img width="1278" alt="스크린샷 2021-07-29 오전 1 16 26" src="https://user-images.githubusercontent.com/76778082/127359862-fdb8a136-f695-44ba-a5b9-c6a52d72ace7.png">
-<img width="1278" alt="스크린샷 2021-07-29 오전 1 16 38" src="https://user-images.githubusercontent.com/76778082/127359872-189e667e-1942-43ec-b924-72c639dfeb09.png">
+<img width="400" alt="스크린샷 2021-07-29 오전 1 16 26" src="https://user-images.githubusercontent.com/76778082/127359862-fdb8a136-f695-44ba-a5b9-c6a52d72ace7.png">
+<img width="400" alt="스크린샷 2021-07-29 오전 1 16 38" src="https://user-images.githubusercontent.com/76778082/127359872-189e667e-1942-43ec-b924-72c639dfeb09.png">
 # Solar-energy-prediction
 to predict solar energy
 
