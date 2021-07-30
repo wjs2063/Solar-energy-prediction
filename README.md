@@ -17,14 +17,11 @@ to predict solar energy
 
 
 
-먼저 데이터 전처리는 local 환경에서 진행하였다.
-require.txt 에 local 환경에설치된 library 버젼이 기록되어있으므로 참고하면된다. 
-
-
-
-
+ 
 
 ### use_data 파일은 원본 weather1의 파일을 local 환경에서 이미 전처리 하였다.
+
+require.txt 에 local 환경에설치된 library 버젼이 기록되어있으므로 참고하면된다.
 
 처리방식은 weather1의 pressure 에 5가지 null 값이 들어가있어서 다른예보의 값으로 대체해주었고 
 중복된 값은 duplicates 함수를 통해 마지막것만 남기고 삭제해주었다(이유는 제일 최근에 예측한값이 가장정확할것이기때문)
