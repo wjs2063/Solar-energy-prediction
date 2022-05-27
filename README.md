@@ -4,7 +4,7 @@
 
 
 
-# Solar-energy-prediction
+# 태양광발전량 예측모델
 to predict solar energy
 
 환경은 colab 으로 진행하였다.
